@@ -22,8 +22,8 @@ git remote add origin https://github.com/jorgesab/React
 git add .
 git commit -m "Initial commit"
 git push origin master / main  cualquiera de las dos
-git config --global user.email "jorgesabapps@gmail.com"
-git config --global user.name "jorgesab"
+git config --global user.email "jorgesabapps@outlook.com"
+git config --global user.name "jorgesabapps"
 git config --global user.password "Odasistemasgt3rs"
 
 git credential-manager-core erase

@@ -1,0 +1,13 @@
+cuando inicias la carpeta principal
+npm init -y
+mkdir projects 
+cd projects
+
+cada proyecto distinto cada paquete 
+npm create vite@latest
+das el nombre del projecto
+elegir react 
+typescript o javascript + swc
+cd name projects
+npm install
+npm run dev
