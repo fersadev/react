@@ -1,0 +1,30 @@
+Mono repositorio multi paquete
+
+npm init -y
+mkdir projects 
+cd projects
+npm create vite@latest
+das el nombre del projecto
+elegir react 
+typescript o javascript + swc
+cd name projects
+npm install
+npm run dev
+abres la carpeta del projecto
+git config --global user.name "jorgesabapps@gmail.com"
+git config --global user.password "Odasistemasgt3rs"
+
+en la carpeta react
+git init
+git remote add origin URL-del-repositorio-en-GitHub
+https://github.com/jorgesab/React.git
+git remote add origin https://github.com/jorgesab/React
+git add .
+git commit -m "Initial commit"
+git push origin master / main  cualquiera de las dos
+git config --global user.email "jorgesabapps@gmail.com"
+git config --global user.name "jorgesab"
+git config --global user.password "Odasistemasgt3rs"
+
+git credential-manager-core erase
+git credential-manager-core configure

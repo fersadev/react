@@ -1,0 +1,17 @@
+React renderiza elementos
+Component: funcion que devuelve un elemento es una fabrica de elementos
+empiezan por mayuscula para que react los diferencie de los elementos de html
+
+cuando un componente padre se modifica su estado cambia o refresca todos su componentes hijos independientemente si sea a modificado los propts(parametros) o no identifica y renderiza solo los cambios pero en la consola is se actualiza todo 
+
+parametros recividos (props) no se deben modificar se crea otra variable
+y a esta se le asigna el parametro y esta variable si es la que se modifica
+
+ademas de varibles y funciones tambien ese le puede  enviar elementos html
+
+la palabra reservada children que se manda como parametro se puede mandar cualquier cosa tanto varibls funciones elementos html h1 div texto
+
+Hook(utilidad) permite añadir funcionalidades a los componentes
+
+si utilizas un prop(parametro) para inicilizar un estado de un componente
+este solo se utilza la primera vez para inicilizarce no vuelve a tomar el prop(parametro) para cambiar el estado ya iniciado ya que este solo se va poder cambiar desdes el componente interno
