@@ -21,4 +21,5 @@ este solo se utilza la primera vez para inicilizarce no vuelve a tomar el prop(p
 
 2.useEffect: permite escribir ejcuatar codigo arbitrario(que a mi me de la gana) cuando el componente se monta el DOM y  cada vez que cambien las dependencias que nosostros decidamos 
  2.1 dependencias:son valores que cada vez que cambien va ejecutar el codigo arbitrario si solo quiere que se ejecute una vez seria []
+2.2 el return del useEffect se ejecuta cuando el componente se deja renderizar y cuando hay un cambio en su dependencia
 
