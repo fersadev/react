@@ -23,3 +23,7 @@ este solo se utilza la primera vez para inicilizarce no vuelve a tomar el prop(p
  2.1 dependencias:son valores que cada vez que cambien va ejecutar el codigo arbitrario si solo quiere que se ejecute una vez seria []
 2.2 el return del useEffect se ejecuta cuando el componente se deja renderizar y cuando hay un cambio en su dependencia
 
+6). las dependencias de useEffect no se pasan como parametros a funciones o metodos que son de la logica se tienen que quedar en el jsx nada de pasarlos
+
+7).customHook: Reutilizar logica de un componente en otros componentes
+
