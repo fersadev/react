@@ -15,5 +15,5 @@ export function useCatImage({fact}){
         })
   
     },[fact]);
-    return {imageUrl};
+    return {imageUrl:CATAAS_URL+imageUrl};
   }

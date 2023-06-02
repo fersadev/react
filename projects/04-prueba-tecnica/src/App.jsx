@@ -1,28 +1,23 @@
-import { useEffect, useState } from 'react';
 import './App.css';
-import { useCatImage } from './hooks/useCatImage';
-import { getRandomFact } from './services/get_random_fact';
+import { useCatImage } from './hooks/use_cat_Image';
+import { useCatFact } from './hooks/use_cat_fat';
 
-const CATAAS_URL = 'https://cataas.com';
+
 
 
  function App() {
-  const [fact, setFact] = useState();
+  const {fact, refreshFact} = useCatFact();
   const {imageUrl} = useCatImage({fact});
-  //petición fact gatos
-  useEffect(()=>{
-      getRandomFact().then(setFact);
-  },[]);
+  
   const handleClick = async()=>{
-    const newFact = await getRandomFact();
-    setFact(newFact);
+    refreshFact();
   }
   return (
     <main>
       <button onClick={handleClick}>Generar imagen de gato random</button>
      <h1>App de gatos</h1>
      {fact && <p>{fact}</p>}
-     {imageUrl && <img src={CATAAS_URL+imageUrl} alt={`Imagen retornada con 3 palabras de ${fact}`} />}
+     {imageUrl && <img src={imageUrl} alt={`Imagen retornada con 3 palabras de ${fact}`} />}
     </main>
   )
 }
