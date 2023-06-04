@@ -22,6 +22,7 @@ este solo se utilza la primera vez para inicilizarce no vuelve a tomar el prop(p
 2.useEffect: permite escribir ejcuatar codigo arbitrario(que a mi me de la gana) cuando el componente se monta el DOM y  cada vez que cambien las dependencias que nosostros decidamos 
  2.1 dependencias:son valores que cada vez que cambien va ejecutar el codigo arbitrario si solo quiere que se ejecute una vez seria []
 2.2 el return del useEffect se ejecuta cuando el componente se deja renderizar y cuando hay un cambio en su dependencia
+2.3 si ves un useEffect dentro de tu componente lo mejor es apartir de le crear un customHook
 
 6). las dependencias de useEffect no se pasan como parametros a funciones o metodos que son de la logica se tienen que quedar en el jsx nada de pasarlos
 
@@ -30,4 +31,8 @@ este solo se utilza la primera vez para inicilizarce no vuelve a tomar el prop(p
 8).useRef: Es un hook permite crear una referencia mutable que persistes durante todo el ciclo de vida de tu componente.
 Es muy util para guardar cualquier valor que puedas mutar como id un elemento del dom un contandor etc
 y que cada vez que cambia no vuelve a renderizar el componente que lo diferencia del useState de esta manera su valor es persistente sin importar si es rendiza el componente tambien persisten las referencias del elemento en el dom
+
+9).useMemo: memoriza un valor para que no se vuelva a renderizar solo dependiendo de unas dependencias estos son utilizados en los customHooks para que tengan un comportamiento como el de los hooks por defecto de reacto como por ejemplo useEffect que solo se renderiza cunado hay un cambio en alguna de sus dependencias
+
+10).useCallback: lo mismo que el useMemo pero para funciones ya que facilita el retorno de funciones 	
 

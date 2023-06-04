@@ -1,1 +1,2 @@
 npm install canvas-confetti -E
+npm install just-debounce-it -E
